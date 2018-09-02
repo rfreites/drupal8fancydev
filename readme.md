@@ -195,7 +195,7 @@ Now you can access to your differents container services.
 
 - Drupal: http://app.drupal8.localhost:82/
 - Adminer: http://adminer.drupal8.localhost:82/
-- Mailhog: http://adminer.drupal8.localhost:82/
+- Mailhog: http://mail.drupal8.localhost:82/
 - Traefik: http://localhost:8082/dashboard/
 
 
