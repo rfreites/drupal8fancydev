@@ -89,8 +89,6 @@ $ docker run --name some-drupal --link some-postgres:postgres -d \
 
 # [Docker Compose](https://github.com/docker/compose)
 
-- create a folder in your project root named "pgdata"
-
 - add .env file at the root of your project with the following lines
 
 ```sh
@@ -126,7 +124,7 @@ services:
 
   drupal:
     container_name: ${DOMAIN}-drupal
-    image: drupal8fancydev:latest
+    image: ronnf89/drupal8fancydev
     volumes:
       - ./modules:/var/www/html/modules
       - ./profiles:/var/www/html/profiles
