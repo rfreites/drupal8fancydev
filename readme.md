@@ -153,7 +153,7 @@ services:
       - POSTGRES_DB=${DB_DATABASE}
     restart: always
     volumes:
-      - ./pgdata:/var/lib/postgresql/data
+      - ./db-data:/var/lib/postgresql/data
     networks:
       - drupal8
     labels:
@@ -183,7 +183,7 @@ services:
       - drupal8
   
 volumes:
-  db:
+  db-data:
     driver: local
 ```
 
