@@ -136,6 +136,7 @@ services:
     labels:
       - "traefik.backend=app-${DOMAIN}"
       - "traefik.frontend.rule=Host:app.${DOMAIN}.localhost"
+      - "traefik.port=80"
     restart: always
     depends_on:
       - postgres
